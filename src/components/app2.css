@@ -1,0 +1,104 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  align-items: center;
+}
+
+main {
+  background-color: aliceblue;
+  width: 80vw;
+  height: 90vh;
+  margin-top: 15px;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 5px 7px 20px #8d8d8d95;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.dies--grid {
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 20px;
+}
+.die {
+  width: 35px;
+  height: 35px;
+  font-weight: 550;
+  border-radius: 5px;
+  box-shadow: 1px 3px 6px #8d8d8d95;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.die:hover {
+  background-color: black;
+  color: white;
+}
+#held {
+  background-color: turquoise;
+}
+.button--main {
+  margin-top: 50px;
+  font-weight: 600;
+  width: 86px;
+  height: 28px;
+  border-radius: 3px;
+  border: none;
+  color: aliceblue;
+  background-color: rgb(38, 179, 167);
+  box-shadow: 1px 3px 5px rgba(180, 180, 180, 0.626);
+  cursor: pointer;
+}
+.button--main:active {
+  transform: scale(1.1);
+}
+.help--text {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.scoreBoard {
+  position: absolute;
+  width: 60vw;
+  height: 50vh;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 10px 10px 20px rgba(90, 87, 87, 0.601);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.best--score {
+  font-weight: 300;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+  color: darkgrey;
+}
+.gameControl {
+  position: relative;
+  bottom: -60px;
+  border-radius: 10px;
+  right: -130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.gameControl button {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}

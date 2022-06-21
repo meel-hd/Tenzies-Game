@@ -1,0 +1,26 @@
+body {
+  font-family: "Courier New", Courier, monospace;
+}
+
+.dark--mode,
+.light--mode {
+  width: 100vw;
+  height: 100vh;
+}
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  width: 75px;
+  height: 30px;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 0.3px solid black;
+}
+.dark--mode {
+  background-color: rgb(33, 49, 65);
+  color: white;
+}
